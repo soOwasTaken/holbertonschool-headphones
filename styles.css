@@ -1,0 +1,535 @@
+/* Top bar */
+
+.top-bar-background {
+    background-image:
+        radial-gradient(100% 100% at 50% 0%, rgba(41, 48, 61, 0.00) 0%, #071629 100%),
+        url('images/banner-top.png');
+    /* Set width and height based on your requirements */
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 1100px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    /* Adjust the background size and position if necessary */
+    background-size: cover;
+    /* This ensures the image covers the entire div, adjust as needed */
+    background-position: center;
+    /* Centers the background image */
+}
+
+.top-bar-background .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 27px;
+    margin-left: 200px;
+    /* Left margin */
+    margin-right: 200px;
+    z-index: 2;
+    position: relative;
+}
+
+/* Menu */
+
+.menu-icon {
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    display: none;
+  }
+
+  .menu-icon .navicon {
+    background: white;
+    display: block;
+    width: 2rem;
+    height: .2rem;
+    position: relative;
+    transition: background .2s ease-out;
+  }
+
+  .menu-icon .navicon::before, .menu-icon .navicon::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: white;
+    transition: all .2 ease-out;
+  }
+
+ .menu-icon .navicon::before {
+    top: .7rem;
+  }
+
+ .menu-icon .navicon::after {
+    top: -.7rem;
+  }
+
+
+
+.navbar-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+  }
+
+  .navbar-menu .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #FFF;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.navbar-menu li {
+    margin-left: 41px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-menu a:hover {
+    color: #FF6565;
+}
+
+.top-section {
+    position: absolute;
+    font-family: "Source Sans Pro", sans-serif;
+    display: flex;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding-top: 372px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-section-text {
+    font-family: "Source Sans Pro", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.top-section-text h1 {
+    font-size: 32px;
+    margin-bottom: -20px;
+}
+
+.top-section-text h2 {
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    line-height: normal;
+}
+
+.top-section-text .btn {
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 22px;
+    background: #FF6565;
+    width: 162px;
+    height: 44px;
+    flex-shrink: 0;
+    border: none;
+}
+
+.top-section-text p {
+    width: 637px;
+    margin-top: 65px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 115px;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.container-2 .text-container2 {
+    display: flex;
+    width: 637px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-2 .text-container2 h1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.container-2 .text-container2 p {
+    color: #071629;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: "Source Sans Pro", sans-serif;
+    gap: 58px;
+    margin-top: 100px;
+    width: 1002px;
+}
+
+.icons-container .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 207px;
+    height: 180px;
+    flex-shrink: 0;
+    margin-top: 50px;
+    margin-bottom: 110px;
+}
+
+.icons-container .icons img {
+    padding-bottom: 20px;
+}
+
+.icons-container .icons h1 {
+    padding-bottom: 10px;
+    color: #071629;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    /* 144.444% */
+}
+
+.icons-container .icons p {
+    color: #071629;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 185.714% */
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.results-background {
+    background-image:
+        radial-gradient(99.52% 99.52% at -0.00% 0%, rgba(16, 25, 41, 0.47) 0%, #071629 100%),
+        url('images/banner-2.png');
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 750px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    /* Adjust the background size and position if necessary */
+    background-size: cover;
+    /* This ensures the image covers the entire div, adjust as needed */
+    background-position: center;
+    /* Centers the background image */
+}
+
+
+.results .result-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 140px;
+}
+
+.results .result-text h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.results .result-text p {
+    color: #FFF;
+    text-align: center;
+    width: 637px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.results .result-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    padding-top: 50px;
+}
+
+.result-icon {
+    position: relative;
+    /* Create a positioning context */
+    width: 190px;
+    height: 190px;
+}
+
+.result-icon img {
+    width: 100%;
+    /* This makes sure the image takes the full width of the parent, adjust as needed */
+    height: auto;
+    display: block;
+    /* Removes any unwanted spacing */
+    z-index: 1;
+    /* Optional if you want to ensure stacking order */
+}
+
+.result-icon h1,
+.result-icon p {
+    position: absolute;
+    /* Absolutely position with respect to parent */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Precise centering */
+    margin: 0;
+    /* Removes any default margins */
+    z-index: 2;
+    /* Ensures the text appears above the image */
+    color: #FFF;
+    /* Adjust color as needed to ensure the text is visible above the image */
+}
+
+/* For finer control, you can adjust h1 and p individually, for instance: */
+.result-icon h1 {
+    top: 50%;
+    color: #FFF;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    /* 56.522% */
+}
+
+.result-icon p {
+    top: 75%;
+    color: #FFF;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 185.714% */
+    white-space: nowrap;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.contact-container .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.contact h1 {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact .btn {
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 22px;
+    background: #FF6565;
+    width: 162px;
+    height: 44px;
+    flex-shrink: 0;
+    border: none;
+}
+
+.contact-container input::placeholder {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-container input {
+    background: transparent;
+    border: none;
+    width: 335px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1745);
+    /* Set opacity for the border color here */
+    height: 44px;
+    outline: none;
+    /* This removes the blue outline on focus; optional but common in custom styles */
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #071629;
+    height: 249px;
+    margin-top: 50px;
+}
+
+footer p {
+    text-align: center;
+    color: #FFF;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top :70px;
+    padding-bottom: 35px;
+    opacity: 0.3517;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 80px;
+    z-index: 2;
+    position: relative;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.footer-container .footer-logo {
+    margin-right: 200px;
+}
+
+.footer-container .footer-social {
+    margin-left: 200px;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+
+    .top-bar-background .top-bar {
+        margin-left: 50px;
+        /* Left margin */
+        margin-right: 50px;
+    }
+    .icons-container {
+        flex-wrap: wrap;  /* Allow wrapping */
+    }
+    .icons {
+        flex-basis: calc(30%);  /* Assumes you want a gap of 10px, adjust as needed */
+        margin-bottom: 10px;  /* Optional: to give space between rows */
+        width: 207px;
+        height: 180px;
+    }
+    .icons p {
+        width: 207px;
+    }
+
+    .results {
+        height: 1000px;
+    }
+
+    .results-background {
+        height: 1000px;
+        background-color: #071629;
+
+    }
+
+    .results .result-text {
+        margin-top: 50px;
+    }
+    .results .result-icons {
+        flex-wrap: wrap;  /* Allow wrapping */
+    }
+    .result-icon {
+        flex-basis: calc(30%);
+        margin-bottom: 10px;
+        width: 190px;
+        height: 190px;
+    }
+    .footer-container {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
